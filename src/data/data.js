@@ -1,0 +1,45 @@
+const goodData = [
+  {
+    id: 1,
+    imageWebp: './img/meat.webp',
+    img: './img/meat.jpg',
+    name: 'Мясо',
+    price: 450,
+    measureUnit: '1 кг',
+    step: 1,
+    unit: 'кг',
+  },
+  {
+    id: 2,
+    imageWebp: './img/milk.webp',
+    img: './img/milk.jpg',
+    name: 'Молоко',
+    price: 50,
+    measureUnit: '1 л',
+    step: 1,
+    unit: 'л',
+  },
+  {
+    id: 3,
+    imageWebp: './img/eggs.webp',
+    img: './img/eggs.jpg',
+    name: 'Яйца',
+    price: 50,
+    measureUnit: '10 шт',
+    step: 10,
+    unit: 'шт',
+  },
+  {
+    id: 4,
+    imageWebp: './img/potato.webp',
+    img: './img/potato.jpg',
+    name: 'Картофель',
+    pack: '(мешок)',
+    price: 500,
+    measureUnit: '38 кг',
+    step: 38,
+    unit: 'кг',
+  },
+];
+
+export default goodData;
