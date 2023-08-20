@@ -4,6 +4,18 @@ const Card = (props) => {
   const { id, imageWebp, img, name, pack, price, measureUnit, step, unit } =
     props;
 
+  /*
+  const getData = () => {
+    const orderData = {
+      name,
+      qty,
+      unit,
+      sum: price * qty,
+    };
+  };
+
+  //console.log(getData);
+*/
   return (
     <div className="card">
       <picture className="card-img">
@@ -19,7 +31,13 @@ const Card = (props) => {
           <span>{price}</span>₽/<span>{measureUnit}</span>
         </div>
       </div>
-      <CardForm name={name} price={price} unit={unit} step={step} />
+      <CardForm
+        name={name}
+        price={price}
+        unit={unit}
+        step={step}
+        //getData={getData}
+      />
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const CardForm = (props) => {
+const CardForm = (props, getData) => {
   const { name, unit, sum, step, price } = props;
 
   const [qty, setQty] = useState(0);
@@ -26,8 +26,13 @@ const CardForm = (props) => {
     console.log(orderData);
   }
 
+  /*
+  function handleFormSubmit(event) {
+    event.preventDefault();
+  }
+*/
   return (
-    <form className="qty" onSubmit={handleFormSubmit}>
+    <form className="qty" onSubmit={handleFormSubmit} getData={getData}>
       <div>
         <button type="button" className="qty__btn" onClick={decrement}>
           -
@@ -47,7 +52,13 @@ const CardForm = (props) => {
         </button>
       </div>
       <div>
-        <button type="submit" className="toCart">
+        <button
+          type="submit"
+          className="toCart"
+          onClick={() => {
+            getData;
+          }}
+        >
           В корзину
         </button>
       </div>
